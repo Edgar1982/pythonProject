@@ -8,7 +8,7 @@ def browser():
         browser = playwright.chromium.launch(headless=False, channel="chrome")
         yield browser
         browser.close()
-        search_data = "Niki Minaj"
+
 
 
 def test_youtube_search(browser: Playwright):
